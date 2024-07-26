@@ -3,6 +3,7 @@
 
 import Lottie from "react-lottie";
 import animationData from "../../../lotties/8306-programming-animation"
+import resumePdf from "/Jubayer_Hossain_MERN_Stack_Developer.pdf"
 
 const Hero = () => {
 
@@ -21,7 +22,7 @@ const Hero = () => {
                 <div className='text-center xl:text-start'>
                     <h1 className='text-5xl xl:text-9xl uppercase font-bold'><span className='text-transparent my-stroke'>Jubayer</span> <br /> Hossain</h1>
                     <p className='sub-heading'>Creative Web Developer</p>
-                    <a href="/Jubayer_Hossain_MERN_Stack_Developer.pdf">
+                    <a href={resumePdf} download={"Jubayer_Hossain_Resume"}>
                         <button className="my-btn mt-5">my Resume</button>
                     </a>
                 </div>

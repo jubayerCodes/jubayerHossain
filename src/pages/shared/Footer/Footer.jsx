@@ -1,5 +1,5 @@
 
-import React from 'react';
+
 import { Link } from "react-router-dom";
 import { FaLinkedinIn, FaFacebookF, FaGithub } from "react-icons/fa";
 
@@ -39,17 +39,17 @@ const Footer = () => {
                         Social Links
                     </h3>
                     <div className='flex justify-start items-center gap-3'>
-                        <Link target='_blank' href={'https://www.linkedin.com/in/jubayer-hossain-6b866723b/'}>
+                        <Link target='_blank' to={'https://www.linkedin.com/in/jubayer-hossain-6b866723b/'}>
                             <button className='text-white border rounded-full p-2 hover:bg-white hover:text-black duration-200'>
                                 <FaLinkedinIn />
                             </button>
                         </Link>
-                        <Link target='_blank' href={'https://github.com/mdsaif1112'}>
+                        <Link target='_blank' to={'https://github.com/jubayerCodes'}>
                             <button className='text-white border rounded-full p-2 hover:bg-white hover:text-black duration-200'>
                                 <FaGithub />
                             </button>
                         </Link>
-                        <Link target='_blank' href={'https://www.facebook.com/jhs.saif/'}>
+                        <Link target='_blank' to={'https://www.facebook.com/jhs.saif/'}>
                             <button className='text-white border rounded-full p-2 hover:bg-white hover:text-black duration-200'>
                                 <FaFacebookF />
                             </button>

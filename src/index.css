@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --text-color: #767676;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+.my-container {
+  @apply w-full xl:w-[1320px] mx-auto;
+}
+
+.list-item {
+  @apply font-semibold text-[15px] hover:text-gray-400 duration-200;
+}
+
+.list-item.active {
+  @apply text-gray-400;
+}
+
+.my-stroke {
+  -webkit-text-stroke: 1px black;
+}
+.title-stroke {
+  -webkit-text-stroke: 1px rgb(235, 235, 235);
+}
+
+.sub-heading {
+  @apply text-[var(--text-color)] mt-5 xl:mt-8 italic;
+}
+
+.scrolled-header {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.section-desc {
+  @apply text-[var(--text-color)] text-[15px];
+  line-height: 2;
+}
+
+.my-btn {
+  @apply px-8 py-3 bg-black hover:bg-transparent duration-300 hover:text-black text-white border-2 border-black text-base uppercase w-full xl:w-fit;
+}
+
+.section {
+  @apply py-16 xl:py-24 px-5;
+}
+
+.inner-rect-bar.addRectAnimate {
+  @apply bg-[#767676] !important;
+}
+
+.project-card {
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+.project-card:hover {
+  box-shadow: none;
+}

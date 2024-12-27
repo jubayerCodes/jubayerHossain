@@ -10,7 +10,7 @@ const Home = () => {
             <Hero />
             <AboutSection />
             <Skills />
-            <Projects className={'bg-[#f5f5f5]'}/>
+            <Projects className={'bg-[#f5f5f5]'} />
             <ContactSection />
         </>
     );

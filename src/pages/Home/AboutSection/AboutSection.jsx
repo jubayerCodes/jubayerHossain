@@ -9,7 +9,7 @@ const AboutSection = () => {
         <section className='section bg-[#f8f9fa]' id='aboutSection'>
             <div className="my-container flex justify-between items-stretch xl:items-center flex-col xl:flex-row gap-10 xl:gap-0">
                 <div className='w-full xl:w-5/12'>
-                    <img src={myPic} alt='' className='w-full' />
+                    <img src={myPic} alt='' className='w-full rounded-full' />
                 </div>
                 <div className='w-full xl:w-7/12 xl:pl-12'>
                     <SectionTitle bgTitle={'about'} title={'jubayer hossain'} />

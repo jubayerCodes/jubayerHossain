@@ -1,27 +1,13 @@
 
-import React from 'react';
-import ProgressBar from 'react-animated-progress-bar';
+import logo from '../../../../assets/images/skills/react.png'
+import './SingleSkill.css'
 
-const SingleSkill = ({ skill, percentage }) => {
+const SingleSkill = () => {
 
     return (
-        <div>
-            <h3 className='font-semibold mb-0'>{skill}</h3>
-
-            {/* TODO: Should update progressbar */}
-            <ProgressBar
-                width="100%"
-                height="8px"
-                rect
-                fontColor="#767676"
-                percentage={percentage + ''}
-                rectPadding="0px"
-                rectBorderRadius="0px"
-                trackPathColor="transparent"
-                bgColor="#767676"
-                trackBorderColor="#767676"
-            />
-
+        <div className=' bg-[#000] py-2 px-5 flex justify-start items-center gap-3 rounded-lg'>
+            <img src={logo} className='w-[40px]' alt="" />
+            <h3 className='text-lg text-white capitalize'>React js</h3>
         </div>
     );
 };

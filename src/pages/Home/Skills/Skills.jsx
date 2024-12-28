@@ -12,6 +12,7 @@ import firebaseLogo from '../../../assets/images/skills/firebase.png'
 import tailwindLogo from '../../../assets/images/skills/tailwind-css.png'
 import materialLogo from '../../../assets/images/skills/material-ui.png'
 import bootstrapLogo from '../../../assets/images/skills/bootstrap.png'
+import stripeLogo from '../../../assets/images/skills/stripe.png'
 
 const Skills = () => {
 
@@ -56,6 +57,10 @@ const Skills = () => {
             name: 'Bootstrap',
             logo: bootstrapLogo
         },
+        {
+            name: 'Stripe',
+            logo: stripeLogo
+        }
     ]
 
 

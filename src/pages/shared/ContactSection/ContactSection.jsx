@@ -42,9 +42,9 @@ const ContactSection = () => {
                             Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and 10:00 p.m. ET, Saturday through Thursday
                         </p>
                         <form onSubmit={sendEmail} className='flex flex-col justify-between'>
-                            <input required className='mb-8 border w-full p-3 text-sm font-semibold' type="text" name="from_name" id="name-input" placeholder='Your Name' />
-                            <input required className='mb-8 border w-full p-3 text-sm font-semibold' type="email" name="reply_to" id="email-input" placeholder='Your Email' />
-                            <textarea required className='mb-8 border p-3 text-sm font-semibold' name="message" id="message-input" cols="30" rows="10" placeholder='Message'></textarea>
+                            <input required className='mb-5 lg:mb-8 border w-full p-3 text-sm font-semibold' type="text" name="from_name" id="name-input" placeholder='Your Name' />
+                            <input required className='mb-5 lg:mb-8 border w-full p-3 text-sm font-semibold' type="email" name="reply_to" id="email-input" placeholder='Your Email' />
+                            <textarea required className='mb-5 lg:mb-8 border p-3 text-sm font-semibold' name="message" id="message-input" cols="30" rows="10" placeholder='Message'></textarea>
                             <input type="submit" value="Submit message" className='my-btn cursor-pointer' style={{ width: '100%' }} />
                         </form>
                     </div>

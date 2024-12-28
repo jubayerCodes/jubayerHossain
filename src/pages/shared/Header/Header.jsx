@@ -82,23 +82,23 @@ const Header = () => {
                         <FaTimes onClick={toggleRightDrawer(false)} className='text-white mr-5 text-[20px]' />
                     </div>
                     <ul className='text-white flex justify-start items-stretch flex-col w-full gap-5'>
-                        <li onClick={closeRightDrawer} className="header-li py-2 px-5 inline-block hover:bg-white hover:text-black">
-                            <ActiveLink className="list-item" href={'#'}>
+                        <li onClick={closeRightDrawer} className="header-li inline-block hover:bg-white hover:text-black">
+                            <ActiveLink className="list-item" href={'#home'}>
                                 Home
                             </ActiveLink>
                         </li>
-                        <li onClick={closeRightDrawer} className="header-li py-2 px-5 inline-block hover:bg-white hover:text-black">
-                            <ActiveLink className="list-item" href={'/#aboutSection'}>
+                        <li onClick={closeRightDrawer} className="header-li inline-block hover:bg-white hover:text-black">
+                            <ActiveLink className="list-item" href={'#aboutSection'}>
                                 About
                             </ActiveLink>
                         </li>
-                        <li onClick={closeRightDrawer} className="header-li py-2 px-5 inline-block hover:bg-white hover:text-black">
-                            <ActiveLink className="list-item" href={'/#portfolioSection'}>
+                        <li onClick={closeRightDrawer} className="header-li inline-block hover:bg-white hover:text-black">
+                            <ActiveLink className="list-item" href={'#portfolioSection'}>
                                 Portfolio
                             </ActiveLink>
                         </li>
-                        <li onClick={closeRightDrawer} className="header-li py-2 px-5 inline-block hover:bg-white hover:text-black">
-                            <ActiveLink className="list-item" href={'/#contactSection'}>
+                        <li onClick={closeRightDrawer} className="header-li inline-block hover:bg-white hover:text-black">
+                            <ActiveLink className="list-item" href={'#contactSection'}>
                                 Contact
                             </ActiveLink>
                         </li>

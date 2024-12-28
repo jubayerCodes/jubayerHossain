@@ -1,3 +1,7 @@
 .header-scrolled{
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
+
+.header-li .list-item{
+    @apply py-2 px-5;
+}

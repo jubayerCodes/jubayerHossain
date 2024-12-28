@@ -14,7 +14,7 @@ const ProjectCard = ({ project }) => {
     return (
         <div className='project-card bg-white'>
             <Link to={live}>
-                <div className='project-img w-full h-[350px] bg-cover' style={{ backgroundImage: `url(${featuredImg})` }}>
+                <div className='project-img w-full h-[300px] bg-cover' style={{ backgroundImage: `url(${featuredImg})` }}>
 
                     <div className='project-info w-full h-full flex flex-col justify-center items-center gap-5 p-5 bg-[#000000d0] rounded'>
                         <Link to={live}>

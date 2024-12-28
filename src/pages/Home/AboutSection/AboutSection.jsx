@@ -3,6 +3,7 @@
 import myPic from '../../../assets/images/DP.jpg'
 import { Divider } from '@mui/material';
 import SectionTitle from '../../../components/SectionTitle/SectionTitle';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const AboutSection = () => {
     return (
@@ -22,9 +23,9 @@ const AboutSection = () => {
                         <p className="section-desc">
                             With 2 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.
                         </p>
-                        <a href='#portfolioSection'>
+                        <AnchorLink href='#portfolioSection'>
                             <button className="my-btn mt-5">My works</button>
-                        </a>
+                        </AnchorLink>
                     </div>
                 </div>
             </div>

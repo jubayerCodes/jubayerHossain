@@ -69,7 +69,7 @@ const Skills = () => {
             <div className="my-container">
                 <SectionTitle bgTitle={'skills'} title={'skills'} />
 
-                <div className='grid grid-cols-5 justify-between md:items-center mt-12 xl:mt-32 gap-5 xl:gap-10'>
+                <div className='grid grid-cols-5 justify-between md:items-center mt-12 xl:mt-32 gap-3 lg:gap-5 xl:gap-10'>
                     {
                         skills?.map((skill, idx) => <SingleSkill skill={skill} key={idx} />)
                     }

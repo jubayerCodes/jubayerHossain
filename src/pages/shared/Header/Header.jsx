@@ -3,11 +3,25 @@ import ActiveLink from "../../../components/ActiveLink/ActiveLink";
 import { Drawer } from "@mui/material";
 import { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import './Header.css'
 
 const Header = () => {
 
+    const [scrolled, setScrolled] = useState(false)
 
     const [rightDrawer, setRightDrawer] = useState(false)
+
+
+    useEffect(() => {
+
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 50)
+        }
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
 
 
     const toggleRightDrawer = (open) => (event) => {
@@ -24,7 +38,7 @@ const Header = () => {
     }
 
     return (
-        <header className={`px-5 sticky top-0 left-0 w-full mb-[-76px] duration-300 bg-white z-50`}>
+        <header className={`px-5 sticky top-0 left-0 w-full mb-[-76px] bg-white z-50 ${scrolled ? 'header-scrolled' : ''}`}>
             <div className="my-container py-5 flex justify-between items-center">
                 <div>
                     <a href={'#'}>
@@ -35,22 +49,22 @@ const Header = () => {
                     <FaBars onClick={toggleRightDrawer(true)} className="xl:hidden text-[26px]" />
                     <ul className="xl:flex justify-end gap-5 hidden">
                         <li>
-                            <ActiveLink className="list-item" href={'#'}>
+                            <ActiveLink className="list-item" href={'#home'}>
                                 Home
                             </ActiveLink>
                         </li>
                         <li>
-                            <ActiveLink className="list-item" href={'/#aboutSection'}>
+                            <ActiveLink className="list-item" href={'#aboutSection'}>
                                 About
                             </ActiveLink>
                         </li>
                         <li>
-                            <ActiveLink className="list-item" href={'/#portfolioSection'}>
+                            <ActiveLink className="list-item" href={'#portfolioSection'}>
                                 Portfolio
                             </ActiveLink>
                         </li>
                         <li>
-                            <ActiveLink className="list-item" href={'/#contactSection'}>
+                            <ActiveLink className="list-item" href={'#contactSection'}>
                                 Contact
                             </ActiveLink>
                         </li>

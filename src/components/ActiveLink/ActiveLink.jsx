@@ -1,14 +1,12 @@
-
-import { Link } from "react-router-dom";
-import React from 'react';
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const ActiveLink = ({ children, href, className }) => {
 
 
     return (
-        <a href={href} className={`${className}`}>
+        <AnchorLink href={href} className={`${className}`}>
             {children}
-        </a>
+        </AnchorLink>
     );
 };
 

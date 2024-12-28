@@ -75,10 +75,3 @@
 .inner-rect-bar.addRectAnimate {
   @apply bg-[#767676] !important;
 }
-
-.project-card {
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-}
-.project-card:hover {
-  box-shadow: none;
-}

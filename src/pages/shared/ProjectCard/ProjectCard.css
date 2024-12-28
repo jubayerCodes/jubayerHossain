@@ -1,0 +1,15 @@
+.project-card{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    @apply transition duration-300 rounded overflow-hidden
+}
+.project-card:hover{
+    @apply scale-105
+}
+
+.project-card:hover .project-info{
+ @apply scale-100
+}
+
+.project-info{
+    @apply scale-0 transition duration-300
+}

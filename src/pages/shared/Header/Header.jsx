@@ -38,7 +38,7 @@ const Header = () => {
     }
 
     return (
-        <header className={`px-5 sticky top-0 left-0 w-full mb-[-76px] bg-white z-50 ${scrolled ? 'header-scrolled' : ''}`}>
+        <header className={`px-5 sticky top-0 left-0 mb-[-76px] bg-white z-50 ${scrolled ? 'header-scrolled' : ''}`}>
             <div className="my-container py-5 flex justify-between items-center">
                 <div>
                     <a href={'#'}>

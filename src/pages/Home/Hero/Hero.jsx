@@ -37,8 +37,8 @@ const Hero = () => {
                 <div className='hidden xl:hidden lg:block'>
                     <Lottie
                         options={defaultOptions}
-                        height={600}
-                        width={600}
+                        height={500}
+                        width={500}
                     />
                 </div>
                 <div className='lg:hidden block md:hidden pt-16'>
@@ -51,8 +51,8 @@ const Hero = () => {
                 <div className='hidden md:block lg:hidden pt-16'>
                     <Lottie
                         options={defaultOptions}
-                        height={400}
-                        width={400}
+                        height={350}
+                        width={350}
                     />
                 </div>
             </div>

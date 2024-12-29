@@ -30,7 +30,7 @@ const Projects = ({ className }) => {
                         <></>
                 }
 
-                <div className='mt-12 xl:mt-20 grid grid-cols-1 xl:grid-cols-3 justify-between items-start gap-10'>
+                <div className='mt-12 md:mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-between items-start gap-10'>
                     {
                         projects?.map(project => <ProjectCard key={project.id} project={project} />)
                     }

@@ -8,11 +8,11 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 const AboutSection = () => {
     return (
         <section className='section bg-[#f8f9fa]' id='aboutSection'>
-            <div className="my-container flex justify-between items-stretch xl:items-center flex-col xl:flex-row gap-10 xl:gap-0">
-                <div className='w-full xl:w-5/12'>
+            <div className="my-container flex justify-between items-stretch md:items-center flex-col md:flex-row gap-10 md:gap-0">
+                <div className='w-full md:w-5/12'>
                     <img src={myPic} alt='' className='w-full rounded-full' />
                 </div>
-                <div className='w-full xl:w-7/12 xl:pl-12'>
+                <div className='w-full md:w-7/12 md:pl-12'>
                     <SectionTitle bgTitle={'about'} title={'jubayer hossain'} />
                     <p className='text-[var(--text-color)] mt-5 italic'>Creative Web Developer</p>
                     <Divider className='pt-8' />

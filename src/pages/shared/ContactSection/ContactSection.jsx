@@ -1,5 +1,5 @@
 
-import React from 'react';
+
 import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';

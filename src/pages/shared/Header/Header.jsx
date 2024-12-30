@@ -2,8 +2,9 @@
 import ActiveLink from "../../../components/ActiveLink/ActiveLink";
 import { Drawer } from "@mui/material";
 import { useEffect, useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaFacebookF, FaGithub, FaLinkedinIn, FaTimes } from "react-icons/fa";
 import './Header.css'
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
@@ -103,6 +104,23 @@ const Header = () => {
                             </ActiveLink>
                         </li>
                     </ul>
+                    <div className='flex justify-start items-center gap-3 pl-5 pt-5'>
+                        <Link target='_blank' to={'https://www.linkedin.com/in/jubayer-hossain-6b866723b/'}>
+                            <button className='text-white border rounded-full p-2 hover:bg-white hover:text-black duration-200'>
+                                <FaLinkedinIn />
+                            </button>
+                        </Link>
+                        <Link target='_blank' to={'https://github.com/jubayerCodes'}>
+                            <button className='text-white border rounded-full p-2 hover:bg-white hover:text-black duration-200'>
+                                <FaGithub />
+                            </button>
+                        </Link>
+                        <Link target='_blank' to={'https://www.facebook.com/jhs.saif/'}>
+                            <button className='text-white border rounded-full p-2 hover:bg-white hover:text-black duration-200'>
+                                <FaFacebookF />
+                            </button>
+                        </Link>
+                    </div>
                 </div>
             </Drawer>
         </header>

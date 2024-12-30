@@ -1,6 +1,6 @@
 
 
-import myPic from '../../../assets/images/DP.jpg'
+import myPic from '../../../assets/images/DP.png'
 import { Divider } from '@mui/material';
 import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 import AnchorLink from 'react-anchor-link-smooth-scroll';

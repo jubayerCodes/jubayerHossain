@@ -1,16 +1,24 @@
 
 import ActiveLink from "../../../components/ActiveLink/ActiveLink";
-import { Drawer } from "@mui/material";
+import { Drawer, IconButton } from "@mui/material";
 import { useEffect, useState } from "react";
 import { FaBars, FaFacebookF, FaGithub, FaLinkedinIn, FaTimes } from "react-icons/fa";
 import './Header.css'
 import { Link } from "react-router-dom";
+import { MdDarkMode, MdLightMode } from "react-icons/md";
 
 const Header = () => {
 
     const [scrolled, setScrolled] = useState(false)
 
     const [rightDrawer, setRightDrawer] = useState(false)
+
+    const [mode, setMode] = useState(() => localStorage.getItem("theme") || 'light')
+
+    const updateThemeMode = (theme) => {
+        setMode(theme)
+        localStorage.setItem("theme", theme)
+    }
 
 
     useEffect(() => {
@@ -21,8 +29,13 @@ const Header = () => {
 
         window.addEventListener('scroll', handleScroll);
 
+        document.documentElement.classList.toggle(
+            'dark',
+            localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+        )
+
         return () => window.removeEventListener('scroll', handleScroll)
-    }, [])
+    }, [mode])
 
 
     const toggleRightDrawer = (open) => (event) => {
@@ -39,14 +52,17 @@ const Header = () => {
     }
 
     return (
-        <header className={`px-5 sticky top-0 left-0 mb-[-76px] bg-white z-50 ${scrolled ? 'header-scrolled' : ''}`}>
+        <header className={`px-5 sticky top-0 left-0 mb-[-76px] bg-[var(--bg)] z-50 ${scrolled ? 'header-scrolled' : ''}`}>
             <div className="my-container py-5 flex justify-between items-center">
                 <div>
                     <a href={'#'}>
                         <span className="text-3xl font-bold uppercase">Jubayer</span>
                     </a>
                 </div>
-                <div>
+                <div className="flex items-center gap-3">
+                    <IconButton className="toggle" onClick={() => updateThemeMode(mode === 'light' ? 'dark' : 'light')}>
+                        {mode === 'light' ? <MdLightMode /> : <MdDarkMode />}
+                    </IconButton>
                     <FaBars onClick={toggleRightDrawer(true)} className="xl:hidden text-[26px]" />
                     <ul className="xl:flex justify-end gap-5 hidden">
                         <li>

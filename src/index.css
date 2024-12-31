@@ -3,33 +3,45 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
   --text-color: #767676;
+  --bg: white;
+  --bg-secondary: #f8f9fa;
 }
+
+
+/* -------------------------Dark Mode Styles-------------------------- */
+
+.dark:root{
+  --text-color: #767676;
+  --bg: #121212;
+  --bg-secondary: black;
+}
+
+body{
+  background-color: var(--bg);
+}
+
+.dark header{
+  @apply border-b-2 border-[#767676] text-white
+}
+
+.dark header .toggle{
+  @apply text-white
+}
+
+.dark .dark-animation, .light-animation{
+  @apply block
+}
+
+.dark-animation, .dark .light-animation{
+  @apply hidden
+}
+
+/* --------------------------Dark Mode Styles-------------------------------- */
 
 * {
   font-family: "Poppins", sans-serif;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
-
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
 
 .my-container {
   @apply w-full xl:w-[1200px] 2xl:w-[1320px] mx-auto

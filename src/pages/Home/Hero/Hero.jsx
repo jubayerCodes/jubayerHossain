@@ -3,6 +3,7 @@
 
 import Lottie from "react-lottie";
 import animationData from "../../../lotties/8306-programming-animation"
+import darkAnimationData from "../../../lotties/dark-programming-animation.json"
 import resumePdf from "/Jubayer_Hossain_MERN_Stack_Developer.pdf"
 
 const Hero = () => {
@@ -11,6 +12,15 @@ const Hero = () => {
         loop: true,
         autoplay: true,
         animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice'
+        }
+    };
+
+    const darkDefaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: darkAnimationData,
         rendererSettings: {
             preserveAspectRatio: 'xMidYMid slice'
         }
@@ -26,33 +36,65 @@ const Hero = () => {
                         <button className="my-btn mt-5">my Resume</button>
                     </a>
                 </div>
-                <div className='hidden xl:block'>
-                    <Lottie
-                        options={defaultOptions}
-                        height={600}
-                        width={600}
-                    />
+                <div className="light-animation">
+                    <div className='hidden xl:block'>
+                        <Lottie
+                            options={defaultOptions}
+                            height={600}
+                            width={600}
+                        />
+                    </div>
+                    <div className='hidden xl:hidden lg:block'>
+                        <Lottie
+                            options={defaultOptions}
+                            height={500}
+                            width={500}
+                        />
+                    </div>
+                    <div className='lg:hidden block md:hidden pt-16'>
+                        <Lottie
+                            options={defaultOptions}
+                            height={250}
+                            width={250}
+                        />
+                    </div>
+                    <div className='hidden md:block lg:hidden pt-16'>
+                        <Lottie
+                            options={defaultOptions}
+                            height={350}
+                            width={350}
+                        />
+                    </div>
                 </div>
-                <div className='hidden xl:hidden lg:block'>
-                    <Lottie
-                        options={defaultOptions}
-                        height={500}
-                        width={500}
-                    />
-                </div>
-                <div className='lg:hidden block md:hidden pt-16'>
-                    <Lottie
-                        options={defaultOptions}
-                        height={250}
-                        width={250}
-                    />
-                </div>
-                <div className='hidden md:block lg:hidden pt-16'>
-                    <Lottie
-                        options={defaultOptions}
-                        height={350}
-                        width={350}
-                    />
+                <div className="dark-animation">
+                    <div className='hidden xl:block'>
+                        <Lottie
+                            options={darkDefaultOptions}
+                            height={600}
+                            width={600}
+                        />
+                    </div>
+                    <div className='hidden xl:hidden lg:block'>
+                        <Lottie
+                            options={darkDefaultOptions}
+                            height={500}
+                            width={500}
+                        />
+                    </div>
+                    <div className='lg:hidden block md:hidden pt-16'>
+                        <Lottie
+                            options={darkDefaultOptions}
+                            height={250}
+                            width={250}
+                        />
+                    </div>
+                    <div className='hidden md:block lg:hidden pt-16'>
+                        <Lottie
+                            options={darkDefaultOptions}
+                            height={350}
+                            width={350}
+                        />
+                    </div>
                 </div>
             </div>
         </section>

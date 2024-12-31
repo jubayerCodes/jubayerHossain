@@ -4,12 +4,10 @@ import myPic from '../../../assets/images/DP.png'
 import { Divider } from '@mui/material';
 import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { Link } from 'react-router-dom';
-import { FaFacebookF, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const AboutSection = () => {
     return (
-        <section className='section bg-[#f8f9fa]' id='aboutSection'>
+        <section className='section bg-[var(--bg-secondary)]' id='aboutSection'>
             <div className="my-container flex justify-between items-stretch md:items-center flex-col md:flex-row gap-10 md:gap-0">
                 <div className='w-full md:w-5/12'>
                     <img src={myPic} alt='' className='w-full rounded-full' />

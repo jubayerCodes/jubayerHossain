@@ -41,7 +41,7 @@ const ContactSection = () => {
                         <p className='section-desc mt-12 xl:mt-20 mb-12'>
                             Please fill out the form on this section to book an appointment. Or call between 9:00 a.m. and 10:00 p.m. <b><u>Bangladesh Standard Time</u></b> - Sunday through Thursday
                         </p>
-                        <form onSubmit={sendEmail} className='flex flex-col justify-between'>
+                        <form onSubmit={sendEmail} className='contact-form flex flex-col justify-between'>
                             <input required className='mb-5 lg:mb-8 border w-full p-3 text-sm font-semibold' type="text" name="from_name" id="name-input" placeholder='Your Name' />
                             <input required className='mb-5 lg:mb-8 border w-full p-3 text-sm font-semibold' type="email" name="reply_to" id="email-input" placeholder='Your Email' />
                             <textarea required className='mb-5 lg:mb-8 border p-3 text-sm font-semibold' name="message" id="message-input" cols="30" rows="5" placeholder='Message'></textarea>

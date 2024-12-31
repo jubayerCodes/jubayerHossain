@@ -15,7 +15,7 @@ const AboutSection = () => {
                 <div className='w-full md:w-7/12 md:pl-12'>
                     <SectionTitle bgTitle={'about'} title={'jubayer hossain'} />
                     <p className='text-[var(--text-color)] mt-5 italic'>Front End Developer</p>
-                    <Divider className='pt-8' />
+                    <Divider className='pt-8 divider' />
                     <div className='pt-7'>
                         <p className='section-desc mb-4'>
                             Hey! This is Jubayer Hossain, MERN Stack based Front End Developer. Aspired to be your best deal ever.
@@ -27,23 +27,6 @@ const AboutSection = () => {
                             <AnchorLink href='#portfolioSection'>
                                 <button className="my-btn">My works</button>
                             </AnchorLink>
-                            {/* <div className='flex justify-start items-center gap-3'>
-                                <Link target='_blank' to={'https://www.linkedin.com/in/jubayer-hossain-6b866723b/'}>
-                                    <button className='text-base text-black border border-black  rounded-full p-3 hover:bg-black hover:text-white duration-200'>
-                                        <FaLinkedinIn />
-                                    </button>
-                                </Link>
-                                <Link target='_blank' to={'https://github.com/jubayerCodes'}>
-                                    <button className='text-base text-black border border-black rounded-full p-3 hover:bg-black hover:text-white duration-200'>
-                                        <FaGithub />
-                                    </button>
-                                </Link>
-                                <Link target='_blank' to={'https://www.facebook.com/jhs.saif/'}>
-                                    <button className='text-base text-black border border-black rounded-full p-3 hover:bg-black hover:text-white duration-200'>
-                                        <FaFacebookF />
-                                    </button>
-                                </Link>
-                            </div> */}
                         </div>
                     </div>
                 </div>

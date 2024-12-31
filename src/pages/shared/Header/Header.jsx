@@ -13,7 +13,8 @@ const Header = () => {
 
     const [rightDrawer, setRightDrawer] = useState(false)
 
-    const [mode, setMode] = useState(() => localStorage.getItem("theme") || 'light')
+    const [mode, setMode] = useState(() => localStorage.getItem("theme") || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
+
 
     const updateThemeMode = (theme) => {
         setMode(theme)

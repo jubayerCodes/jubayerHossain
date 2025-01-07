@@ -32,7 +32,7 @@ const Hero = () => {
                 <div className='text-center xl:text-start'>
                     <h1 className='hero-title text-5xl md:text-7xl lg:text-8xl xl:text-9xl uppercase font-bold'><span className='text-transparent my-stroke'>Jubayer</span> <br /> Hossain</h1>
                     <p className='sub-heading md:text-start'>Front End Developer</p>
-                    <a href={resumePdf} download={"Jubayer_Hossain_Resume"}>
+                    <a href={resumePdf} download={"Jubayer_Hossain_MERN_Stack_Developer"}>
                         <button className="my-btn mt-5">my Resume</button>
                     </a>
                 </div>

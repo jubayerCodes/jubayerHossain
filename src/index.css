@@ -56,7 +56,7 @@ body{
 }
 
 .dark .contact-form input, .dark .contact-form textarea{
-  @apply bg-transparent text-[var(--text-color)]
+  @apply bg-transparent text-[#9CA3AF]
 }
 
 .dark .divider {

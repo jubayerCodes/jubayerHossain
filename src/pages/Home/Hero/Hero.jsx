@@ -31,7 +31,7 @@ const Hero = () => {
             <div className="my-container py-72 flex flex-col-reverse md:flex-row justify-between items-stretch md:items-center gap-12 lg:gap-0">
                 <div className='text-center xl:text-start'>
                     <h1 className='hero-title text-5xl md:text-7xl lg:text-8xl xl:text-9xl uppercase font-bold'><span className='text-transparent my-stroke'>Jubayer</span> <br /> Hossain</h1>
-                    <p className='sub-heading md:text-start'>Front End Developer</p>
+                    <p className='sub-heading md:text-start'>MERN Stack Developer</p>
                     <a href={resumePdf} download={"Jubayer_Hossain_MERN_Stack_Developer"}>
                         <button className="my-btn mt-5">my Resume</button>
                     </a>

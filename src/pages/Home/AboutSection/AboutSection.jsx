@@ -14,14 +14,14 @@ const AboutSection = () => {
                 </div>
                 <div className='w-full md:w-7/12 md:pl-12'>
                     <SectionTitle bgTitle={'about'} title={'jubayer hossain'} />
-                    <p className='text-[var(--text-color)] mt-5 italic'>Front End Developer</p>
+                    <p className='text-[var(--text-color)] mt-5 italic'>MERN Stack Developer</p>
                     <Divider className='pt-8 divider' />
                     <div className='pt-7'>
                         <p className='section-desc mb-4'>
-                            Hey! This is Jubayer Hossain, MERN Stack based Front End Developer. Aspired to be your best deal ever.
+                            Hey! This is Jubayer Hossain, a MERN Stack Developer. Aspired to be your best deal ever.
                         </p>
                         <p className="text-[var(--text-color)] text-[15px]">
-                            I am a Front End Developer. Having a solid foundation on MERN Stack technologies like React, Next Js, as well as Mongo DB. Being a Next Gen Developer, I am motivated to get by with upcoming technologies. I love to learn things and implement them in real life problem solving projects. Having 2 years of experience in professional field, I love to work with different teams.
+                            I am a MERN Stack Developer. Having a solid foundation on MERN Stack technologies like React, Next Js, as well as Mongo DB. Being a Next Gen Developer, I am motivated to get by with upcoming technologies. I love to learn things and implement them in real life problem solving projects. Having 2 years of experience in professional field, I love to work with different teams.
                         </p>
                         <div className='flex flex-col-reverse sm:flex-row justify-start gap-5 items-stretch mt-5'>
                             <AnchorLink href='#portfolioSection'>

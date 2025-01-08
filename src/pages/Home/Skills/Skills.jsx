@@ -18,7 +18,7 @@ const Skills = () => {
 
     const skills = [
         {
-            name: 'React JS',
+            name: 'React',
             logo: reactLogo
         },
         {
@@ -34,7 +34,7 @@ const Skills = () => {
             logo: nodeLogo
         },
         {
-            name: 'Mongo DB',
+            name: 'MongoDB',
             logo: mongodbLogo
         },
         {

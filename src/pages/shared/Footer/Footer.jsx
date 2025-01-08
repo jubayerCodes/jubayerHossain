@@ -12,7 +12,7 @@ const Footer = () => {
                         Jubayer
                     </h3>
                     <p className='text-white text-[14px]'>
-                        Motivated Front End Developer with a passion for creating seamless web applications.
+                        Motivated MERN Stack Developer with a passion for creating seamless web applications.
                     </p>
                 </div>
                 <div>

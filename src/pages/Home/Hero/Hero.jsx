@@ -4,7 +4,7 @@
 import Lottie from "react-lottie";
 import animationData from "../../../lotties/8306-programming-animation"
 import darkAnimationData from "../../../lotties/dark-programming-animation.json"
-import resumePdf from "/Jubayer_Hossain_MERN_Stack_Developer.pdf"
+import resumePdf from "/Jubayer_Hossain_Frontend_Developer.pdf"
 
 const Hero = () => {
 
@@ -31,8 +31,8 @@ const Hero = () => {
             <div className="my-container py-72 flex flex-col-reverse md:flex-row justify-between items-stretch md:items-center gap-12 lg:gap-0">
                 <div className='text-center xl:text-start'>
                     <h1 className='hero-title text-5xl md:text-7xl lg:text-8xl xl:text-9xl uppercase font-bold'><span className='text-transparent my-stroke'>Jubayer</span> <br /> Hossain</h1>
-                    <p className='sub-heading md:text-start'>MERN Stack Developer</p>
-                    <a href={resumePdf} download={"Jubayer_Hossain_MERN_Stack_Developer"}>
+                    <p className='sub-heading md:text-start'>Frontend Developer</p>
+                    <a href={resumePdf} download={"Jubayer_Hossain_Frontend_Developer"}>
                         <button className="my-btn mt-5">my Resume</button>
                     </a>
                 </div>

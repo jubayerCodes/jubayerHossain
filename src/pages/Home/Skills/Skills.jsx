@@ -1,67 +1,92 @@
 
 
-import SingleSkill from './SingleSkill/SingleSkill';
-import SectionTitle from '../../../components/SectionTitle/SectionTitle';
-import reactLogo from '../../../assets/images/skills/react.png'
-import nextLogo from '../../../assets/images/skills/nextjs.png'
-import jsLogo from '../../../assets/images/skills/js.png'
-import nodeLogo from '../../../assets/images/skills/node-js.png'
-import mongodbLogo from '../../../assets/images/skills/mongodb.png'
-import expressLogo from '../../../assets/images/skills/express-js.png'
-import firebaseLogo from '../../../assets/images/skills/firebase.png'
-import tailwindLogo from '../../../assets/images/skills/tailwind-css.png'
-import materialLogo from '../../../assets/images/skills/material-ui.png'
-import bootstrapLogo from '../../../assets/images/skills/bootstrap.png'
-import stripeLogo from '../../../assets/images/skills/stripe.png'
+import reactLogo from "../../../assets/images/skills/react.png";
+import nextLogo from "../../../assets/images/skills/nextjs.png";
+import jsLogo from "../../../assets/images/skills/js.png";
+import tsLogo from "../../../assets/images/skills/ts-logo.png";
+import nodeLogo from "../../../assets/images/skills/node-js.png";
+import mongodbLogo from "../../../assets/images/skills/mongodb.png";
+import expressLogo from "../../../assets/images/skills/express-js.png";
+import firebaseLogo from "../../../assets/images/skills/firebase.png";
+import tailwindLogo from "../../../assets/images/skills/tailwind-css.png";
+import materialLogo from "../../../assets/images/skills/material-ui.png";
+import bootstrapLogo from "../../../assets/images/skills/bootstrap.png";
+import stripeLogo from "../../../assets/images/skills/stripe.png";
+import reduxLogo from "../../../assets/images/skills/Redux.png";
+import scssLogo from "../../../assets/images/skills/scss.png";
+import chatgptLogo from "../../../assets/images/skills/chatgpt.png";
+import figmaLogo from "../../../assets/images/skills/figma.png";
+import SectionTitle from "../../../components/SectionTitle/SectionTitle";
+import SingleSkill from "./SingleSkill/SingleSkill";
 
 const Skills = () => {
 
     const skills = [
         {
-            name: 'React',
-            logo: reactLogo
+            name: "React",
+            logo: reactLogo,
         },
         {
-            name: 'Next JS',
-            logo: nextLogo
+            name: "Next JS",
+            logo: nextLogo,
         },
         {
-            name: 'Javascript',
-            logo: jsLogo
+            name: "Javascript",
+            logo: jsLogo,
         },
         {
-            name: 'Node JS',
-            logo: nodeLogo
+            name: "Typecript",
+            logo: tsLogo,
         },
         {
-            name: 'MongoDB',
-            logo: mongodbLogo
+            name: "Node JS",
+            logo: nodeLogo,
         },
         {
-            name: 'Express JS',
-            logo: expressLogo
+            name: "MongoDB",
+            logo: mongodbLogo,
         },
         {
-            name: 'Firebase',
-            logo: firebaseLogo
+            name: "Express JS",
+            logo: expressLogo,
         },
         {
-            name: 'Tailwind CSS',
-            logo: tailwindLogo
+            name: "Redux",
+            logo: reduxLogo,
         },
         {
-            name: 'Material UI',
-            logo: materialLogo
+            name: "Firebase",
+            logo: firebaseLogo,
         },
         {
-            name: 'Bootstrap',
-            logo: bootstrapLogo
+            name: "Figma",
+            logo: figmaLogo,
         },
         {
-            name: 'Stripe',
-            logo: stripeLogo
-        }
-    ]
+            name: "Tailwind CSS",
+            logo: tailwindLogo,
+        },
+        {
+            name: "SCSS",
+            logo: scssLogo,
+        },
+        {
+            name: "Material UI",
+            logo: materialLogo,
+        },
+        {
+            name: "Bootstrap",
+            logo: bootstrapLogo,
+        },
+        {
+            name: "Stripe",
+            logo: stripeLogo,
+        },
+        {
+            name: "Chat GPT",
+            logo: chatgptLogo,
+        },
+    ];
 
 
     return (

@@ -5,22 +5,27 @@
     "projectType": "MERN Stack Project",
     "featuredImg": "https://i.ibb.co/GwLqtHy/myHome.png",
     "technologies": [
+      "React.js",
+      "JavaScript",
+      "Redux",
       "MongoDB",
       "Express.js",
       "Node.js",
-      "React.js",
-      "Redux",
       "Firebase",
       "Tailwind CSS",
       "Material UI"
     ],
     "features": [
-      "Role-based dashboard: Students, Instructors, and Admins have different access privileges.",
-      "Students can enroll in classes through a secure payment system using Stripe.",
-      "Dynamic routing with protected routes based on user roles.",
-      "Dark/light theme toggle for better user experience.",
-      "Firebase used for authentication and hosting.",
-      "Data stored and managed via MongoDB with a RESTful backend built in Node.js and Express.js."
+      "Role-based dashboard: Admin, Agent, and Buyer roles with specific access controls.",
+      "Agents can add, update, and manage their property listings.",
+      "Buyers can browse available properties and view detailed property information.",
+      "Secure login and signup with Firebase Authentication.",
+      "Integrated payment system using Stripe for property bookings or purchases.",
+      "Dark/light theme toggle for improved user experience.",
+      "Fully responsive UI using Tailwind CSS and DaisyUI.",
+      "Protected routes to ensure authorized access based on user roles.",
+      "Backend built with Node.js and Express.js; MongoDB used for storing user and property data.",
+      "Smooth navigation using React Router and dynamic routing for property detail pages."
     ],
     "links": {
       "live": "https://myhome-5ccef.web.app/",

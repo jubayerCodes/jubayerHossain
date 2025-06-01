@@ -11,7 +11,6 @@ const Projects = ({ className }) => {
         fetch('/projects.json')
             .then(res => res.json())
             .then(data => setProjects(data))
-
     }, [])
 
 

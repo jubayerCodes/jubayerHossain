@@ -1,6 +1,34 @@
 [
   {
     "id": 1,
+    "title": "MyHome",
+    "projectType": "MERN Stack Project",
+    "featuredImg": "https://i.ibb.co/GwLqtHy/myHome.png",
+    "technologies": [
+      "MongoDB",
+      "Express.js",
+      "Node.js",
+      "React.js",
+      "Redux",
+      "Firebase",
+      "Tailwind CSS",
+      "Material UI"
+    ],
+    "features": [
+      "Role-based dashboard: Students, Instructors, and Admins have different access privileges.",
+      "Students can enroll in classes through a secure payment system using Stripe.",
+      "Dynamic routing with protected routes based on user roles.",
+      "Dark/light theme toggle for better user experience.",
+      "Firebase used for authentication and hosting.",
+      "Data stored and managed via MongoDB with a RESTful backend built in Node.js and Express.js."
+    ],
+    "links": {
+      "live": "https://myhome-5ccef.web.app/",
+      "sourceCode": "https://github.com/jubayerCodes/myHome.git"
+    }
+  },
+  {
+    "id": 2,
     "title": "Hello Summer",
     "projectType": "MERN Stack Project",
     "featuredImg": "https://i.ibb.co/YPddD3R/hellosummer-47f86-web-app-Hello-Summer.png",
@@ -22,32 +50,6 @@
     "links": {
       "live": "https://hellosummer-47f86.web.app/",
       "sourceCode": "https://github.com/jubayerCodes/helloSummer.git"
-    }
-  },
-  {
-    "id": 2,
-    "title": "Prime Toys",
-    "projectType": "MERN Stack Project",
-    "featuredImg": "https://i.ibb.co/FJfjZZS/primetoys-b0dbf-web-app-Prime-Toys-1.png",
-    "technologies": [
-      "React JS",
-      "Tailwind CSS",
-      "Daisy UI",
-      "MongoDB",
-      "Node JS",
-      "Express JS",
-      "Firebase",
-      "Axios",
-      "React Tabs"
-    ],
-    "features": [
-      "Only logged-in users can add, remove and update their toys. And see details of a toy.",
-      "Used pagination when showing toys, and users can search for toys by name.",
-      "Added tabs on the home page. Tabs are containing toys in terms of subcategory."
-    ],
-    "links": {
-      "live": "https://primetoys-b0dbf.web.app/",
-      "sourceCode": "https://github.com/jubayerCodes/primeToys.git"
     }
   },
   {
@@ -73,6 +75,32 @@
     "links": {
       "live": "https://bong-bites-75239.web.app/",
       "sourceCode": "https://github.com/jubayerCodes/bong-bites.git"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Prime Toys",
+    "projectType": "MERN Stack Project",
+    "featuredImg": "https://i.ibb.co/FJfjZZS/primetoys-b0dbf-web-app-Prime-Toys-1.png",
+    "technologies": [
+      "React JS",
+      "Tailwind CSS",
+      "Daisy UI",
+      "MongoDB",
+      "Node JS",
+      "Express JS",
+      "Firebase",
+      "Axios",
+      "React Tabs"
+    ],
+    "features": [
+      "Only logged-in users can add, remove and update their toys. And see details of a toy.",
+      "Used pagination when showing toys, and users can search for toys by name.",
+      "Added tabs on the home page. Tabs are containing toys in terms of subcategory."
+    ],
+    "links": {
+      "live": "https://primetoys-b0dbf.web.app/",
+      "sourceCode": "https://github.com/jubayerCodes/primeToys.git"
     }
   }
 ]
